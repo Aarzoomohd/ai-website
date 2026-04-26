@@ -22,7 +22,7 @@ const port=process.env.PORT || 5000
 app.use(express.json())     //req.body se jo aaye wo thk s aaye
 app.use(cookieParser())   // cookies ke liye
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"https://ai-website-1-o4ai.onrender.com",
   credentials: true
 }))
 app.use("/api/auth",authRouter)   //auth router main jo bhi url bnenge unke aage ye lag jayega
