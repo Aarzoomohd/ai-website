@@ -375,8 +375,7 @@ export const getBySlug = async (req, res) => {
     }
     return res.status(200).json(website);
   } catch (error) {
-    return res
-      .status(500)
-      .json({ message: `get by slug website error ${error}` });
+    Console.log(error);
+    return res.status(500).json({ message: `get by slug website error ${error}` });
   }
 };
